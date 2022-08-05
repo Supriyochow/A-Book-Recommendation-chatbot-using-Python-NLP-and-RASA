@@ -1,0 +1,73 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - explore_books
+  - recommend_books
+  - select_books
+  - i_want_books
+  - fiction
+  - fav_book
+  - abt_what
+  - out_of_scope
+
+responses:
+  utter_cheer_up:
+  - text: "Sorry, I didn't get what you said. Please rephrase it"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, developed for 4th year project by Divya, Supriyo, Aman and Dipankar"
+
+  utter_select_books:
+  - text: "The book you have selected is {name}, it was written by {author} and was published by {publisher}"
+
+  utter_fav_book:
+  - text: "My favourite book is Charlie and the Chocolate by Ronald Dahl"
+
+  utter_abt_what:
+  - text: "I am a bot, who recommends book based on the users interest"
+
+  utter_out_of_scope:
+  - text: "Sorry, I didn't get what you said. Please rephrase what you said."
+
+
+
+entities:
+  - bo
+  - co
+  - book_name
+  - genre
+  - name
+
+slots:
+  name:
+    type: text
+    influence_conversation: false
+    mappings:
+    - type: custom
+
+
+actions:
+  - action_explore_books
+  - action_recommend_books
+  - action_utter_greet
+  - action_name
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

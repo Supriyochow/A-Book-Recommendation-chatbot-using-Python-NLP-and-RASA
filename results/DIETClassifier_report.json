@@ -1,0 +1,41 @@
+{
+  "bo": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 12,
+    "confused_with": {}
+  },
+  "co": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {}
+  },
+  "book_name": {
+    "precision": 1.0,
+    "recall": 0.8461538461538461,
+    "f1-score": 0.9166666666666666,
+    "support": 13,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9032258064516129,
+    "f1-score": 0.9491525423728813,
+    "support": 31
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.8931623931623932,
+    "f1-score": 0.9419191919191919,
+    "support": 31
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9032258064516129,
+    "f1-score": 0.9474584555229716,
+    "support": 31
+  }
+}

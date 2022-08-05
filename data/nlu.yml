@@ -1,0 +1,152 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+    - 
+
+- intent: explore_books
+  examples: |
+    - Explore Books
+    - I want to explore books
+    - Please help me exploring books
+    - Exploring Books
+    - Just Exploring Books
+    - Looking for Books
+    - Want to explore books
+    - explore books
+
+- intent: recommend_books
+  examples: |
+    - Get [Book](bo:books) Recommendation
+    - Give me some [novel](bo:books) recommendation
+    - I want some [novels](bo:books) recommendation
+    - [novel](bo:books) Recommendation is needed
+    - Help me with some [book](bo:books)
+    - Recommend [novel](bo:books)
+    - Recommendation of [novel](bo:books)
+    - I have read [it](book_name) what else should I [read](co)?
+    - Suggest me some [novel](bo:books) I have just [completed](co:read) [metamorphosis](book_name:it)
+    - Suggest me some good [novel](bo:books), I have just [complete](co:read)[The Great Gatsby](book_name:it)
+    - Recommend some [novel](bo:books) that have similar plot to that of [Jane Eyre](book_name:it)
+    - What [novel](bo:books) should I [try](co:read) if I liked [Outlander](book_name:it)?
+    - Currently I am reading [Pride and Prejudice](book_name:it) what else should I [trying](co:read)?
+    - Recommend me some [novel](bo:books) now I am [reading](co:read) [Game of Thrones](book_name:it)
+
+
+
+- intent: select_books
+  examples: |
+    - select books
+
+- intent: fav_book
+  examples: |
+    - what is your favourite book?
+    - tell me about your favourite book
+    - can you tell me about your favourite book
+    - favourite book
+    - whats your favourite book?
+
+- intent: abt_what
+  examples: |
+    - what you do?
+    - what is your work?
+    - what can you do?
+    - tell me about yourself?
+    - How can you help me?
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2+2?
+    - Who is US President?
+    - Tell me a joke
+    - Harry Potter
+    - Sherlock Holmes
